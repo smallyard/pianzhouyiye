@@ -1,0 +1,15 @@
+body{
+	background: url('../img/bg.jpg');
+	margin: 0;
+}
+canvas{
+	margin: 0;
+	position: absolute;
+}
+.poetry{
+	float: right;
+	margin: 70px;
+	font-family: '微软雅黑';
+	color: #48544E;
+	font-weight: 600;
+}
