@@ -12,8 +12,9 @@ canvas{
 	margin: 70px;
 	font-family: '微软雅黑';
 	color: #48544E;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 30px;
+	min-width: 976px;
 }
 .poetry span{
 	color: gray;

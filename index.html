@@ -7,19 +7,22 @@
     <link rel="stylesheet" type="text/css" href="css/site.css">
 </head>
 <body>
-    <div class="poetry">
-        <h2>夜半乐 冻云黯淡天气</h2>
-        <span>柳永</span>
-        <p>冻云黯淡天气，扁舟一叶，乘兴离江渚。<br/>渡万壑千岩，越溪深处。<br/>怒涛渐息，樵风乍起，更闻商旅相呼，片帆高举。<br/>泛画鹢、翩翩过南浦。</p>
-        <p>望中酒旆闪闪，一簇烟村，数行霜树。<br/>残日下，渔人鸣榔归去。<br/>败荷零落，衰杨掩映，岸边两两三三，浣沙游女。<br/>避行客，含羞笑相语。 </p>
-        <p>到此因念，绣阁轻抛，浪萍难驻。<br/>叹后约，丁宁竟何据。<br/>惨离怀，空恨岁晚归期阻。<br/>凝泪眼，杳杳神京路。<br/>断鸿声远长天暮。</p>
+    <div id="div_poetry" class="poetry">
     </div>
     <canvas id="canvas_rain"></canvas>
     <script src="js/jquery.min.js"></script>
     <script src="js/rain.js"></script>
+    <script src="http://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
     <script type="text/javascript">
         $(function(){
+        	//rain start
             rain("#canvas_rain", "left");
+
+            //type
+            var theater = new theaterJS();
+			theater
+				.addActor("div_poetry", 1)
+				.addScene("div_poetry:<h2>夜半乐 冻云黯淡天气</h2><span>柳永</span><p>冻云黯淡天气，扁舟一叶，乘兴离江渚。渡万壑千岩，越溪深处。怒涛渐息，樵风乍起，更闻商旅相呼，片帆高举。泛画鹢、翩翩过南浦。</p><p>望中酒旆闪闪，一簇烟村，数行霜树。残日下，渔人鸣榔归去。败荷零落，衰杨掩映，岸边两两三三，浣沙游女。避行客，含羞笑相语。 </p><p>到此因念，绣阁轻抛，浪萍难驻。叹后约，丁宁竟何据。惨离怀，空恨岁晚归期阻。凝泪眼，杳杳神京路。断鸿声远长天暮。</p>");
         });
     </script>
 </body>
