@@ -20,7 +20,7 @@ canvas{
 .poetry{
 	float: right;
 	margin: 70px;
-	font-family: '微软雅黑';
+    font-family: '微软雅黑', serif;
 	color: #48544E;
 	font-weight: 600;
 	line-height: 30px;
