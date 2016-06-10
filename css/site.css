@@ -1,33 +1,74 @@
 @keyframes animatedBackground {
-  	1% { background-color: #F9F8F8; }
-  	2% { background-color: #ABA8A8; }
-  	10% { background: url('../img/bg.jpg'); }
-  	100% { background: url('../img/bg.jpg'); }
+    1% {
+        background-color: #F9F8F8;
+    }
+    2% {
+        background-color: #ABA8A8;
+    }
+    5% {
+        background: url('../img/bg.jpg');
+    }
+    100% {
+        background: url('../img/bg.jpg');
+    }
 }
 
-body{
-	margin: 0;
-	animation: animatedBackground 10s linear infinite;
+body {
+    margin: 0;
+    animation: animatedBackground 10s linear infinite;
 }
 
-
-canvas{
-	margin: 0;
-	position: absolute;
-	z-index: -999;
+canvas {
+    margin: 0;
+    position: absolute;
+    z-index: -999;
 }
 
-.poetry{
-	float: right;
-	margin: 70px;
-	font-family: '微软雅黑';
-	color: #48544E;
-	font-weight: 600;
-	line-height: 30px;
-	min-width: 976px;
+.poetry {
+    float: right;
+    margin: 70px;
+    font-family: '微软雅黑', serif;
+    color: #48544E;
+    font-weight: 600;
+    line-height: 30px;
+    min-width: 976px;
 }
 
-.poetry span{
-	color: gray;
-	margin-left: 30px;
+.poetry span {
+    color: gray;
+    margin-left: 30px;
+}
+
+@keyframes animatedShip {
+    0% {
+        -webkit-transform: rotate(0deg);
+        left: 987px;
+    }
+    10% {
+        -webkit-transform: rotate(0deg);
+        left: 980px;
+    }
+    40% {
+        -webkit-transform: rotate(2deg);
+        left: 990px;
+    }
+    60% {
+        -webkit-transform: rotate(0deg);
+        left: 998px;
+    }
+    80% {
+        -webkit-transform: rotate(-2deg);
+        left: 988px;
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        left: 991px;
+    }
+}
+
+#ship {
+    left: 991px;
+    top: 677px;
+    position: absolute;
+    animation: animatedShip 10s ease forwards infinite;
 }
