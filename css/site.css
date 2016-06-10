@@ -1,12 +1,22 @@
-body{
-	background: url('../img/bg.jpg');
-	margin: 0;
+@keyframes animatedBackground {
+  	1% { background-color: #F9F8F8; }
+  	2% { background-color: #ABA8A8; }
+  	10% { background: url('../img/bg.jpg'); }
+  	100% { background: url('../img/bg.jpg'); }
 }
+
+body{
+	margin: 0;
+	animation: animatedBackground 10s linear infinite;
+}
+
+
 canvas{
 	margin: 0;
 	position: absolute;
 	z-index: -999;
 }
+
 .poetry{
 	float: right;
 	margin: 70px;
@@ -16,6 +26,7 @@ canvas{
 	line-height: 30px;
 	min-width: 976px;
 }
+
 .poetry span{
 	color: gray;
 	margin-left: 30px;
